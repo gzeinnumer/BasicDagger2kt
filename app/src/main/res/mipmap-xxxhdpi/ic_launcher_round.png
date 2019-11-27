@@ -1,0 +1,130 @@
+package id.sisi.crmsmi.ui.distributor.util.list_sales;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001:\u0001&B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J*\u0010\u001c\u001a\u00020\u001d2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00020\u001f2\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030!H\u0016J*\u0010\"\u001a\u00020\u001d2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00020\u001f2\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030!H\u0016J*\u0010#\u001a\u00020\u001d2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00020$2\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030%H\u0016R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u001c\u0010\t\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00020\u0010\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u001c\u0010\u0013\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\f\"\u0004\b\u0015\u0010\u000eR\u001c\u0010\u0016\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\f\"\u0004\b\u0018\u0010\u000eR\u001c\u0010\u0019\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\f\"\u0004\b\u001b\u0010\u000e\u00a8\u0006\'"}, d2 = {"Lid/sisi/crmsmi/ui/distributor/util/list_sales/SalesDistributorDataSource;", "Landroidx/paging/PageKeyedDataSource;", "", "Lid/sisi/crmsmi/data/model/view/SimpleDataModel;", "apiService", "Lid/sisi/crmsmi/data/api/ApiService;", "(Lid/sisi/crmsmi/data/api/ApiService;)V", "getApiService", "()Lid/sisi/crmsmi/data/api/ApiService;", "kodeDist", "", "getKodeDist", "()Ljava/lang/String;", "setKodeDist", "(Ljava/lang/String;)V", "loadingState", "Landroidx/lifecycle/MutableLiveData;", "getLoadingState", "()Landroidx/lifecycle/MutableLiveData;", "namaSales", "getNamaSales", "setNamaSales", "order", "getOrder", "setOrder", "sort", "getSort", "setSort", "loadAfter", "", "params", "Landroidx/paging/PageKeyedDataSource$LoadParams;", "callback", "Landroidx/paging/PageKeyedDataSource$LoadCallback;", "loadBefore", "loadInitial", "Landroidx/paging/PageKeyedDataSource$LoadInitialParams;", "Landroidx/paging/PageKeyedDataSource$LoadInitialCallback;", "LoadingState", "app_developmentDebug"})
+public final class SalesDistributorDataSource extends androidx.paging.PageKeyedDataSource<java.lang.Integer, id.sisi.crmsmi.data.model.view.SimpleDataModel> {
+    @org.jetbrains.annotations.NotNull()
+    private final androidx.lifecycle.MutableLiveData<java.lang.Integer> loadingState = null;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String namaSales;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String kodeDist;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String order;
+    @org.jetbrains.annotations.Nullable()
+    private java.lang.String sort;
+    @org.jetbrains.annotations.NotNull()
+    private final id.sisi.crmsmi.data.api.ApiService apiService = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MutableLiveData<java.lang.Integer> getLoadingState() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getNamaSales() {
+        return null;
+    }
+    
+    public final void setNamaSales(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getKodeDist() {
+        return null;
+    }
+    
+    public final void setKodeDist(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getOrder() {
+        return null;
+    }
+    
+    public final void setOrder(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.lang.String getSort() {
+        return null;
+    }
+    
+    public final void setSort(@org.jetbrains.annotations.Nullable()
+    java.lang.String p0) {
+    }
+    
+    @java.lang.Override()
+    public void loadInitial(@org.jetbrains.annotations.NotNull()
+    androidx.paging.PageKeyedDataSource.LoadInitialParams<java.lang.Integer> params, @org.jetbrains.annotations.NotNull()
+    androidx.paging.PageKeyedDataSource.LoadInitialCallback<java.lang.Integer, id.sisi.crmsmi.data.model.view.SimpleDataModel> callback) {
+    }
+    
+    @java.lang.Override()
+    public void loadAfter(@org.jetbrains.annotations.NotNull()
+    androidx.paging.PageKeyedDataSource.LoadParams<java.lang.Integer> params, @org.jetbrains.annotations.NotNull()
+    androidx.paging.PageKeyedDataSource.LoadCallback<java.lang.Integer, id.sisi.crmsmi.data.model.view.SimpleDataModel> callback) {
+    }
+    
+    @java.lang.Override()
+    public void loadBefore(@org.jetbrains.annotations.NotNull()
+    androidx.paging.PageKeyedDataSource.LoadParams<java.lang.Integer> params, @org.jetbrains.annotations.NotNull()
+    androidx.paging.PageKeyedDataSource.LoadCallback<java.lang.Integer, id.sisi.crmsmi.data.model.view.SimpleDataModel> callback) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final id.sisi.crmsmi.data.api.ApiService getApiService() {
+        return null;
+    }
+    
+    public SalesDistributorDataSource(@org.jetbrains.annotations.NotNull()
+    id.sisi.crmsmi.data.api.ApiService apiService) {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 \u00032\u00020\u0001:\u0001\u0003B\u0005\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0004"}, d2 = {"Lid/sisi/crmsmi/ui/distributor/util/list_sales/SalesDistributorDataSource$LoadingState;", "", "()V", "Companion", "app_developmentDebug"})
+    public static final class LoadingState {
+        private static final int IDLE = 0;
+        private static final int LOADING_INITIAL = 1;
+        private static final int LOADING_NEXT = 2;
+        private static final int INITIAL_FAILED = 3;
+        private static final int NEXT_FAILED = 4;
+        public static final id.sisi.crmsmi.ui.distributor.util.list_sales.SalesDistributorDataSource.LoadingState.Companion Companion = null;
+        
+        public LoadingState() {
+            super();
+        }
+        
+        @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000b\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0014\u0010\u000b\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006R\u0014\u0010\r\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006\u00a8\u0006\u000f"}, d2 = {"Lid/sisi/crmsmi/ui/distributor/util/list_sales/SalesDistributorDataSource$LoadingState$Companion;", "", "()V", "IDLE", "", "getIDLE", "()I", "INITIAL_FAILED", "getINITIAL_FAILED", "LOADING_INITIAL", "getLOADING_INITIAL", "LOADING_NEXT", "getLOADING_NEXT", "NEXT_FAILED", "getNEXT_FAILED", "app_developmentDebug"})
+        public static final class Companion {
+            
+            public final int getIDLE() {
+                return 0;
+            }
+            
+            public final int getLOADING_INITIAL() {
+                return 0;
+            }
+            
+            public final int getLOADING_NEXT() {
+                return 0;
+            }
+            
+            public final int getINITIAL_FAILED() {
+                return 0;
+            }
+            
+            public final int getNEXT_FAILED() {
+                return 0;
+            }
+            
+            private Companion() {
+                super();
+            }
+        }
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

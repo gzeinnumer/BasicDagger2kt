@@ -1,0 +1,68 @@
+package id.sisi.crmsmi.ui.distributor.util.list_lt;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001:\u0002\'(B\u001b\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\b\u0010\u001c\u001a\u00020\nH\u0016J\u0010\u0010\u001d\u001a\u00020\n2\u0006\u0010\u001e\u001a\u00020\nH\u0016J\u0018\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00032\u0006\u0010\u001e\u001a\u00020\nH\u0016J\u0018\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\nH\u0016R\u0014\u0010\t\u001a\u00020\nX\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0014\u0010\r\u001a\u00020\nX\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\fR\u0014\u0010\u000f\u001a\u00020\nX\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\fR\u0014\u0010\u0011\u001a\u00020\nX\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\fR\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0013\u001a\u00020\u0014X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0019\u001a\u00020\u0014X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u0016\"\u0004\b\u001b\u0010\u0018\u00a8\u0006)"}, d2 = {"Lid/sisi/crmsmi/ui/distributor/util/list_lt/LTDistributorAdapter;", "Landroidx/paging/PagedListAdapter;", "Lid/sisi/crmsmi/data/model/view/LTDistributor;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "diffCallback", "Landroidx/recyclerview/widget/DiffUtil$ItemCallback;", "clickListener", "Lid/sisi/crmsmi/ui/distributor/util/list_lt/LTDistributorAdapter$OnItemClickListener;", "(Landroidx/recyclerview/widget/DiffUtil$ItemCallback;Lid/sisi/crmsmi/ui/distributor/util/list_lt/LTDistributorAdapter$OnItemClickListener;)V", "VIEW_TYPE_EMPTY", "", "getVIEW_TYPE_EMPTY", "()I", "VIEW_TYPE_ERROR", "getVIEW_TYPE_ERROR", "VIEW_TYPE_ITEM", "getVIEW_TYPE_ITEM", "VIEW_TYPE_LOADING", "getVIEW_TYPE_LOADING", "loadingMore", "", "getLoadingMore", "()Z", "setLoadingMore", "(Z)V", "serverError", "getServerError", "setServerError", "getItemCount", "getItemViewType", "position", "onBindViewHolder", "", "holder", "onCreateViewHolder", "Lid/sisi/crmsmi/ui/distributor/util/list_lt/LTDistributorAdapter$ViewHolder;", "parent", "Landroid/view/ViewGroup;", "viewType", "OnItemClickListener", "ViewHolder", "app_developmentDebug"})
+public final class LTDistributorAdapter extends androidx.paging.PagedListAdapter<id.sisi.crmsmi.data.model.view.LTDistributor, androidx.recyclerview.widget.RecyclerView.ViewHolder> {
+    private final int VIEW_TYPE_ITEM = 0;
+    private final int VIEW_TYPE_EMPTY = 1;
+    private final int VIEW_TYPE_LOADING = 2;
+    private final int VIEW_TYPE_ERROR = 3;
+    private boolean loadingMore;
+    private boolean serverError;
+    private final id.sisi.crmsmi.ui.distributor.util.list_lt.LTDistributorAdapter.OnItemClickListener clickListener = null;
+    
+    public final int getVIEW_TYPE_ITEM() {
+        return 0;
+    }
+    
+    public final int getVIEW_TYPE_EMPTY() {
+        return 0;
+    }
+    
+    public final int getVIEW_TYPE_LOADING() {
+        return 0;
+    }
+    
+    public final int getVIEW_TYPE_ERROR() {
+        return 0;
+    }
+    
+    public final boolean getLoadingMore() {
+        return false;
+    }
+    
+    public final void setLoadingMore(boolean p0) {
+    }
+    
+    public final boolean getServerError() {
+        return false;
+    }
+    
+    public final void setServerError(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public id.sisi.crmsmi.ui.distributor.util.list_lt.LTDistributorAdapter.ViewHolder onCreateViewHolder(@org.jetbrains.annotations.NotNull()
+    android.view.ViewGroup parent, int viewType) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public int getItemViewType(int position) {
+        return 0;
+    }
+    
+    @java.lang.Override()
+    public int getItemCount() {
+        return 0;
+    }
+    
+    @java.lang.Override()
+    public void onBindViewHolder(@org.jetbrains.annotations.NotNull()
+    androidx.recyclerview.widget.RecyclerView.ViewHolder holder, int position) {
+    }
+    
+    public LTDistributorAdapter(@org.jetbrains.annotations.NotNull()
+    androidx.recyclerview.widget.DiffUtil.ItemCallback<id.sisi.crmsmi.data.model.view.LTDistribu
