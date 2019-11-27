@@ -6,6 +6,7 @@ import com.gzeinnumer.basicdagger2kt.dagger.DaggerAppComponent
 import com.gzeinnumer.basicdagger2kt.dagger.modules.AndroidModule
 
 //todo 4
+//as unversal Context
 class MyApp : Application(){
     lateinit var component: AppComponent
 
